@@ -29,7 +29,7 @@ exports.eveningExerciseAnswers = {
   },
 
   reverseString : function(str) {
-
+    return str.split('').reverse().join('');
   },
 
   longestSubString : function(str) {
