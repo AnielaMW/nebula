@@ -8,7 +8,11 @@ exports = (typeof window === 'undefined') ? global : window;
 
 exports.eveningExerciseAnswers = {
   indexOf : function(arr, item) {
-
+    var answer = -1
+    for (var i = 0; i < arr.length; i++){
+      if (arr[i] === item) {answer = i;}
+    }
+    return answer;
   },
 
   sum : function(arr) {
