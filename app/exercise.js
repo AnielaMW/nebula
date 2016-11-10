@@ -42,7 +42,18 @@ exports.eveningExerciseAnswers = {
   },
 
   letterMoveForward : function(str) {
-
+    var arr = str.split('')
+    var newArr = []
+    arr.forEach(function(digit){
+      if (digit.match(/[0-9]/i)){var newDigit = digit;}
+      else if (digit.match(/z/)){var newDigit = 'a';}
+      else {
+        var toADigit = digit.charCodeAt(0) + 1;
+        var newDigit = String.fromCharCode(toADigit);
+      }
+      newArr.push(newDigit);
+    });
+    return newArr.join('');
   },
 
   capitalizeWords : function(str) {
