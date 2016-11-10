@@ -33,7 +33,12 @@ exports.eveningExerciseAnswers = {
   },
 
   longestSubString : function(str) {
-
+    var arr = str.split(' ');
+    var answer = ""
+    arr.forEach(function (word){
+      if (word.length > answer.length){answer = word}
+    })
+    return answer
   },
 
   letterMoveForward : function(str) {
