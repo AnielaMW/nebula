@@ -16,7 +16,9 @@ exports.eveningExerciseAnswers = {
   },
 
   sum : function(arr) {
-
+    var answer = 0
+    arr.map (function (num) {answer += num})
+    return answer;
   },
 
   remove : function(arr, item) {
